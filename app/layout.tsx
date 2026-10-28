@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import { Cormorant_Garamond, Inter } from 'next/font/google'
 import './globals.css'
 import Loader from '@/components/loader'
+import ScrollProgress from '@/components/scroll-rope'
 
 const editorial = Cormorant_Garamond({
   subsets: ['latin'],

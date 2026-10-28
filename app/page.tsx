@@ -11,23 +11,29 @@ import { QuotesSection } from '@/components/quotes-section'
 import { InstagramSection } from '@/components/instagram-section'
 import { BookingSection } from '@/components/booking-section'
 import { SiteFooter } from '@/components/site-footer'
+import ScrollRope from '@/components/scroll-rope'
 
 export default function Page() {
   return (
     <main className="relative bg-background">
-      <SiteNav />
-      <Hero />
-      <CinematicSlider />
-      <AboutSection />
-      <StylesSection />
-      <MasonryGallery />
-      <PhilosophySection />
-      <ProcessSection />
-      {/* <StudioSection /> */}
-      <QuotesSection />
-      <InstagramSection />
-      <BookingSection />
-      <SiteFooter />
+        <ScrollRope >
+
+          <SiteNav />
+          <Hero />
+          <CinematicSlider />
+          <AboutSection />
+          <StylesSection />
+          <MasonryGallery />
+          <PhilosophySection />
+          <ProcessSection />
+          {/* <StudioSection /> */}
+          <QuotesSection />
+          <InstagramSection />
+          <BookingSection />
+          <SiteFooter />
+
+        </ScrollRope>
+
     </main>
   )
 }
