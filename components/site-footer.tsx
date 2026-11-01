@@ -1,3 +1,4 @@
+
 'use client'
 
 import { motion } from 'motion/react'
@@ -8,18 +9,18 @@ const navGroups = [
   {
     title: 'Explore',
     links: [
-      { label: 'Work', href: '#work' },
-      { label: 'Styles', href: '#styles' },
-      { label: 'Studio', href: '#studio' },
-      { label: 'About', href: '#about' },
+      { label: 'Portfolio', href: '#work' },
+      { label: 'Expertise', href: '#styles' },
+      { label: 'Gallery', href: '#studio' },
+      { label: 'About Me', href: '#about' },
     ],
   },
   {
     title: 'Connect',
     links: [
       { label: 'Instagram', href: INSTAGRAM_URL },
-{ label: 'Email', href: 'mailto:studio@atelierform.archi' },
-    { label: 'Start a project', href: '#contact' },
+      { label: 'Contact', href: '#contact' },
+      { label: 'Collaborate', href: '#contact' },
     ],
   },
 ]
@@ -31,11 +32,11 @@ export function SiteFooter() {
         <div className="grid gap-12 pb-16 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
             <a href="#top" className="font-serif text-3xl font-light tracking-hero text-foreground">
-              Atelier Form
+              Sarina Khezrian
             </a>
             <p className="mt-5 max-w-sm font-sans text-sm leading-relaxed text-muted-foreground">
-              Residential, civic, and interior architecture. By appointment only, one project at a
-              time.
+              Architecture, BIM, and architectural graphics. Exploring digital design,
+              3D modeling, and visual communication through creativity and technical precision.
             </p>
           </div>
 
@@ -75,7 +76,7 @@ export function SiteFooter() {
 
         <div className="flex flex-col items-center justify-between gap-4 border-t border-border py-8 font-sans text-[11px] uppercase tracking-[0.2em] text-muted-foreground md:flex-row">
           <span>&copy; {new Date().getFullYear()} SARINA KHEZRIAN</span>
-          <span>Architecture with intention</span>
+          <span>Architecture | BIM | Digital Design</span>
         </div>
       </div>
     </footer>

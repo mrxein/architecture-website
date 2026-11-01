@@ -15,7 +15,7 @@ export function InstagramSection() {
               Follow the work
             </p>
             <h2 className="mt-3 font-serif text-4xl font-light tracking-hero text-foreground md:text-5xl">
-              @instagram account
+              @SarinApex
             </h2>
           </div>
           <a

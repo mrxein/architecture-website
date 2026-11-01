@@ -1,3 +1,4 @@
+
 'use client'
 
 import { useEffect, useState } from 'react'
@@ -33,7 +34,7 @@ export function SiteNav() {
             href="#top"
             className="font-sans text-sm font-semibold uppercase tracking-[0.25em] text-foreground"
           >
-            Architecture Studio
+            Sarina Khezrian
           </a>
 
           <ul className="hidden items-center gap-9 md:flex">
@@ -55,7 +56,7 @@ export function SiteNav() {
               href={INSTAGRAM_URL}
               target="_blank"
               rel="noreferrer"
-              aria-label="Atelier Form on Instagram"
+              aria-label="Sarina Khezrian on Instagram"
               className="hidden text-muted-foreground transition-colors hover:text-foreground md:block"
             >
               <InstagramGlyph className="size-[18px]" />
@@ -83,7 +84,7 @@ export function SiteNav() {
           >
             <div className="flex h-16 items-center justify-between px-5">
               <span className="font-sans text-sm font-semibold uppercase tracking-[0.25em]">
-                Atelier Form
+                Sarina Khezrian
               </span>
               <button
                 type="button"
@@ -118,7 +119,7 @@ export function SiteNav() {
               className="flex items-center gap-2 border-t border-border px-6 py-6 font-sans text-xs uppercase tracking-[0.2em] text-muted-foreground"
             >
               <InstagramGlyph className="size-4" />
-              @atelierform
+              @SarinApex
             </a>
           </motion.div>
         )}

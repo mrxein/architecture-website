@@ -1,61 +1,129 @@
-export const INSTAGRAM_URL = 'https://instagram.com/'
+
+export const INSTAGRAM_URL = 'https://www.instagram.com/SarinApex/'
 
 export const NAV_LINKS = [
-  { label: 'Work', href: '#work' },
-  { label: 'Practice', href: '#about' },
-  { label: 'Approach', href: '#styles' },
-  { label: 'Studio', href: '#studio' },
+  { label: 'Portfolio', href: '#work' },
+  { label: 'About', href: '#about' },
+  { label: 'Expertise', href: '#styles' },
+  { label: 'Gallery', href: '#studio' },
   { label: 'Contact', href: '#contact' },
 ] as const
 
 export const SLIDER_IMAGES = [
-  { src: '/slider-1.png', title: 'Civic Thresholds', caption: 'Cultural · Berlin · 2024' },
-  { src: '/slider-2.png', title: 'House in Stillness', caption: 'Residential · Kyoto · 2023' },
-  { src: '/slider-3.png', title: 'Museum of Light', caption: 'Public · Copenhagen · 2025' },
+  { src: '/slider-1.png', title: 'Architectural Study 01', caption: 'Architectural Design · Portfolio' },
+  { src: '/slider-2.png', title: 'Digital Space 02', caption: '3D Modeling · Portfolio' },
+  { src: '/slider-3.png', title: 'Visual Composition 03', caption: 'Architectural Graphics · Portfolio' },
 ] as const
 
-export type GalleryCategory = 'Civic' | 'Residential' | 'Interiors' | 'Cultural' | 'Landscape' | 'Experimental'
+export type GalleryCategory =
+  | 'Architectural Design'
+  | 'BIM & Modeling'
+  | '3D Visualization'
+  | 'Structural Modeling'
+  | 'Architectural Graphics'
+  | 'Digital Design'
 
-export const GALLERY_FILTERS = ['All', 'Civic', 'Residential', 'Interiors', 'Cultural', 'Landscape', 'Experimental'] as const
+export const GALLERY_FILTERS = [
+  'All',
+  'Architectural Design',
+  'BIM & Modeling',
+  '3D Visualization',
+  'Structural Modeling',
+  'Architectural Graphics',
+  'Digital Design',
+] as const
 
-export type GalleryItem = { src: string; title: string; category: GalleryCategory; span: 'tall' | 'wide' | 'normal' }
+export type GalleryItem = {
+  src: string
+  title: string
+  category: GalleryCategory
+  span: 'tall' | 'wide' | 'normal'
+}
 
 export const GALLERY_ITEMS: GalleryItem[] = [
-  { src: '/gallery-blackwork-1.png', title: 'Concrete Sequence', category: 'Civic', span: 'tall' },
-  { src: '/gallery-fineline-1.png', title: 'Courtyard House', category: 'Residential', span: 'normal' },
-  { src: '/gallery-realism-1.jpg', title: 'Forest Residence', category: 'Residential', span: 'normal' },
-  { src: '/gallery-geometric-1.png', title: 'Civic Monument', category: 'Civic', span: 'wide' },
-  { src: '/gallery-ornamental-1.jpg', title: 'Room for Memory', category: 'Interiors', span: 'tall' },
-  { src: '/gallery-custom-1.png', title: 'Light Pavilion', category: 'Experimental', span: 'normal' },
-  { src: '/gallery-blackwork-2.jpg', title: 'Archive Extension', category: 'Cultural', span: 'normal' },
-  { src: '/gallery-fineline-2.jpg', title: 'Linear Garden', category: 'Landscape', span: 'tall' },
-  { src: '/gallery-realism-2.jpg', title: 'Stone House', category: 'Residential', span: 'wide' },
-  { src: '/gallery-geometric-2.jpg', title: 'Urban Field', category: 'Civic', span: 'normal' },
-  { src: '/gallery-ornamental-2.jpg', title: 'Material Study', category: 'Interiors', span: 'normal' },
-  { src: '/gallery-custom-2.jpg', title: 'Atmosphere I', category: 'Experimental', span: 'tall' },
+  { src: '/gallery-blackwork-1.png', title: 'Architectural Composition 01', category: 'Architectural Graphics', span: 'tall' },
+  { src: '/gallery-fineline-1.png', title: 'Digital Modeling 01', category: 'BIM & Modeling', span: 'normal' },
+  { src: '/gallery-realism-1.jpg', title: 'Spatial Visualization 01', category: '3D Visualization', span: 'normal' },
+  { src: '/gallery-geometric-1.png', title: 'Architectural Study 01', category: 'Architectural Design', span: 'wide' },
+  { src: '/gallery-ornamental-1.jpg', title: 'Visual Design 01', category: 'Digital Design', span: 'tall' },
+  { src: '/gallery-custom-1.png', title: '3D Spatial Study 02', category: '3D Visualization', span: 'normal' },
+  { src: '/gallery-blackwork-2.jpg', title: 'Graphic Presentation 02', category: 'Architectural Graphics', span: 'normal' },
+  { src: '/gallery-fineline-2.jpg', title: 'Architectural Modeling 02', category: 'BIM & Modeling', span: 'tall' },
+  { src: '/gallery-realism-2.jpg', title: 'Spatial Composition 02', category: 'Architectural Design', span: 'wide' },
+  { src: '/gallery-geometric-2.jpg', title: 'Digital Design 02', category: 'Digital Design', span: 'normal' },
+  { src: '/gallery-ornamental-2.jpg', title: 'Visual Study 03', category: 'Architectural Graphics', span: 'normal' },
+  { src: '/gallery-custom-2.jpg', title: 'Structural Model Study 01', category: 'Structural Modeling', span: 'tall' },
 ]
 
 export const STYLES = [
-  { name: 'Context', src: '/gallery-blackwork-2.png', description: 'Architecture begins with attention to place — its climate, memory, material and daily rituals.' },
-  { name: 'Material', src: '/gallery-fineline-1.png', description: 'Honest materials, carefully detailed. Tactility and aging are part of the design from day one.' },
-  { name: 'Light', src: '/gallery-realism-1.png', description: 'Spaces shaped by shadow, reflection and the changing character of natural light.' },
-  { name: 'Continuity', src: '/gallery-ornamental-1.png', description: 'Interiors, landscape and structure considered as one quiet, continuous composition.' },
-  { name: 'Specificity', src: '/gallery-custom-1.png', description: 'Every project is drawn from scratch for its people, place and particular future.' },
+  {
+    name: 'BIM',
+    src: '/gallery-blackwork-2.png',
+    description: 'Exploring Building Information Modeling to develop organized digital representations of architectural projects and support efficient design workflows.',
+  },
+  {
+    name: 'Modeling',
+    src: '/gallery-fineline-1.png',
+    description: 'Creating and refining digital architectural and structural models with attention to accuracy, geometry, and technical details.',
+  },
+  {
+    name: 'Visualization',
+    src: '/gallery-realism-1.png',
+    description: 'Transforming architectural concepts into three-dimensional visual experiences through modeling and rendering tools such as SketchUp and Enscape.',
+  },
+  {
+    name: 'Graphics',
+    src: '/gallery-ornamental-1.png',
+    description: 'Combining visual composition, image editing, and graphic communication to create clear and engaging architectural presentations.',
+  },
+  {
+    name: 'Technology',
+    src: '/gallery-custom-1.png',
+    description: 'Exploring digital workflows and AI-powered tools to support architectural design, visualization, and creative content production.',
+  },
 ] as const
 
 export const PROCESS_STEPS = [
-  { number: '01', title: 'Listen', description: 'Every project starts with a conversation about people, place, constraints and possibility.' },
-  { number: '02', title: 'Frame', description: 'We test the brief through drawings, models and material studies until the central idea is clear.' },
-  { number: '03', title: 'Make', description: 'A close collaboration with craftspeople, consultants and builders turns the idea into a precise place.' },
-  { number: '04', title: 'Stay', description: 'We remain involved through completion, refining the details that make architecture feel inevitable.' },
+  {
+    number: '01',
+    title: 'Explore',
+    description: 'Understanding the architectural concept, project requirements, visual references, and technical objectives.',
+  },
+  {
+    number: '02',
+    title: 'Develop',
+    description: 'Translating ideas into digital drawings and 3D models using architectural design and modeling tools.',
+  },
+  {
+    number: '03',
+    title: 'Refine',
+    description: 'Reviewing model details, improving visual compositions, and refining digital representations with attention to accuracy.',
+  },
+  {
+    number: '04',
+    title: 'Present',
+    description: 'Preparing architectural graphics and visual presentations to communicate design ideas clearly and effectively.',
+  },
 ] as const
 
-export const QUOTES = [
-  { text: 'They gave our building a sense of calm we did not know how to ask for. Every decision feels inevitable.', author: 'E. Laurent', meta: 'Private residence' },
-  { text: 'The studio listened before it drew. The result is generous, practical and completely its own.', author: 'N. Okafor', meta: 'Cultural project' },
-  { text: 'A rare combination of rigor and warmth. They made a complex process feel deeply human.', author: 'J. Meyer', meta: 'Hospitality interior' },
-] as const
+// Client testimonials will be added when authentic feedback is available.
+export const QUOTES = [] as const
 
-export const INSTAGRAM_GRID = ['/insta-1.png', '/insta-2.png', '/insta-3.png', '/insta-4.png', '/gallery-blackwork-1.png', '/gallery-geometric-1.png']
+export const INSTAGRAM_GRID = [
+  '/insta-1.png',
+  '/insta-2.png',
+  '/insta-3.png',
+  '/insta-4.png',
+  '/gallery-blackwork-1.png',
+  '/gallery-geometric-1.png',
+]
 
-export const PROJECT_TYPE_OPTIONS = ['Residential', 'Civic & Cultural', 'Interiors', 'Landscape', 'Experimental / Not sure']
+export const PROJECT_TYPE_OPTIONS = [
+  'Architectural Design',
+  'BIM & Digital Modeling',
+  'Structural Steel Modeling',
+  '3D Visualization & Rendering',
+  'Architectural Graphics',
+  'Digital Content Creation',
+  'Other / Not Sure',
+]
