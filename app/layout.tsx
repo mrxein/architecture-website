@@ -20,24 +20,52 @@ const clean = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Sarina Khezrian — Architecture with Intention',
+  title: 'Sarina Khezrian — Architecture, BIM & Digital Design',
   description:
-    'Sarina Khezrian — an architecture practice creating quiet, precise spaces shaped by context, material and light.',
+    'Explore the architectural portfolio of Sarina Khezrian, specializing in architectural design, BIM modeling, Tekla Structures, 3D visualization, and architectural graphics.',
+
   generator: 'realxein',
+
   keywords: [
-'architecture studio',
-    'residential architecture',
-    'cultural architecture',
-    'interior architecture',
     'Sarina Khezrian',
+    'architecture portfolio',
+    'architectural design',
+    'BIM modeling',
+    'Building Information Modeling',
+    'Tekla Structures',
+    'structural steel modeling',
+    'Autodesk Revit',
+    'AutoCAD',
+    'SketchUp',
+    'Enscape rendering',
+    '3D architectural visualization',
+    'architectural graphics',
+    'digital design',
   ],
+
   openGraph: {
-    title: 'Sarina Khezrian — Architecture with Intention',
+    title: 'Sarina Khezrian — Architecture & BIM Portfolio',
     description:
-      'Independent architecture practice creating residential, civic, cultural and interior spaces with intention.',
+      'Discover architectural design, BIM modeling, structural modeling, 3D visualization, and architectural graphics by Sarina Khezrian.',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Sarina Khezrian — Architecture, BIM & Digital Design',
+      },
+    ],
   },
-}
+
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sarina Khezrian — Architecture & BIM Portfolio',
+    description:
+      'Architectural design, BIM modeling, Tekla Structures, 3D visualization, and architectural graphics.',
+    images: ['/og-image.jpg'],
+  },
+};
 
 export const viewport: Viewport = {
   colorScheme: 'dark',
