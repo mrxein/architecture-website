@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     title: 'Sarina Khezrian — Architecture & BIM Portfolio',
     description:
       'Architectural design, BIM modeling, Tekla Structures, 3D visualization, and architectural graphics.',
-    images: ['/og-image.jpg'],
+    images: ['/og-image.png'],
   },
 };
 
