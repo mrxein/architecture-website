@@ -58,22 +58,22 @@ export const GALLERY_ITEMS: GalleryItem[] = [
 export const STYLES = [
   {
     name: 'BIM',
-    src: '/gallery-blackwork-2.png',
+    src: '/gallery-blackwork-2.jpg',
     description: 'Exploring Building Information Modeling to develop organized digital representations of architectural projects and support efficient design workflows.',
   },
   {
     name: 'Modeling',
-    src: '/gallery-fineline-1.png',
+    src: '/gallery-fineline-1.jpg',
     description: 'Creating and refining digital architectural and structural models with attention to accuracy, geometry, and technical details.',
   },
   {
     name: 'Visualization',
-    src: '/gallery-realism-1.png',
+    src: '/gallery-realism-1.jpg',
     description: 'Transforming architectural concepts into three-dimensional visual experiences through modeling and rendering tools such as SketchUp and Enscape.',
   },
   {
     name: 'Graphics',
-    src: '/gallery-ornamental-1.png',
+    src: '/gallery-ornamental-1.jpg',
     description: 'Combining visual composition, image editing, and graphic communication to create clear and engaging architectural presentations.',
   },
   {
