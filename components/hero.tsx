@@ -1,3 +1,4 @@
+
 'use client'
 
 import { useRef } from 'react'
@@ -24,7 +25,7 @@ export function Hero() {
       <motion.div style={{ y, scale }} className="absolute inset-0">
         <Image
           src="/hero-architect.png"
-          alt="Monumental modern concrete architecture in dramatic black and white"
+          alt="Contemporary architectural design and spatial visualization by Sarina Khezrian"
           fill
           priority
           className="object-contain opacity-70 scale-200"
@@ -44,7 +45,7 @@ export function Hero() {
             transition={{ duration: 0.9, delay: 0.2 }}
             className="mb-6 font-sans text-[11px] uppercase tracking-[0.4em] text-muted-foreground"
           >
-            Architecture Studio • Space • Material • Light
+            Architecture • BIM • Digital Design • Visualization
           </motion.p>
 
           <motion.h1
@@ -62,7 +63,7 @@ export function Hero() {
             transition={{ duration: 0.9, delay: 0.6 }}
             className="mt-6 font-sans text-sm uppercase tracking-[0.35em] text-foreground/80"
           >
-            Architecture with intention.
+            Architecture | BIM & Architectural Graphics
           </motion.p>
 
           <motion.div
@@ -75,13 +76,13 @@ export function Hero() {
               href="#work"
               className="group inline-flex items-center gap-3 bg-foreground px-8 py-4 font-sans text-xs uppercase tracking-[0.2em] text-background transition-colors hover:bg-accent hover:text-accent-foreground"
             >
-              Explore Work
+              Explore Portfolio
             </a>
             <a
               href="#contact"
               className="inline-flex items-center gap-3 border border-border px-8 py-4 font-sans text-xs uppercase tracking-[0.2em] text-foreground transition-colors hover:border-foreground"
             >
-              Start a Project
+              Get in Touch
             </a>
           </motion.div>
         </div>

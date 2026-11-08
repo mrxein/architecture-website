@@ -1,3 +1,4 @@
+
 'use client'
 
 import Image from 'next/image'
@@ -5,9 +6,9 @@ import { motion } from 'motion/react'
 import { SectionHeading } from '@/components/section-heading'
 
 const STATS = [
-  { value: '14+', label: 'Years practicing' },
-  { value: '38', label: 'Projects completed' },
-  { value: '07', label: 'Cities of practice' },
+  { value: '01', label: 'Year of Tekla Experience' },
+  { value: 'BIM', label: 'Digital Modeling' },
+  { value: '3D', label: 'Architectural Visualization' },
 ]
 
 export function AboutSection() {
@@ -24,7 +25,7 @@ export function AboutSection() {
           <div className="film-grain grayscale relative aspect-4/5 overflow-hidden">
             <Image
               src="/avatar-v2.png"
-              alt="Portrait of the architect in the studio"
+              alt="Sarina Khezrian, architecture and BIM enthusiast"
               fill
               className="object-cover grayscale"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -33,7 +34,7 @@ export function AboutSection() {
         </motion.div>
 
         <div className="flex flex-col justify-center">
-          <SectionHeading index="01" eyebrow="The Practice" title="Behind the Work" />
+          <SectionHeading index="01" eyebrow="About Me" title="Designing Beyond Spaces" />
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -42,14 +43,16 @@ export function AboutSection() {
             className="mt-8 space-y-5 text-pretty font-sans leading-relaxed text-muted-foreground"
           >
             <p>
-              Atelier Form is an independent architecture practice built on a simple idea: a building should
-              give more than it takes. Working across Berlin, Tokyo, and Los Angeles, the studio sits
-              where structural precision meets quiet, emotional minimalism.
+              I’m Sarina Khezrian, an architecture enthusiast with experience in architectural
+              design, digital modeling, and visual communication. My professional background
+              includes working in an architecture office and one year of experience editing
+              and refining structural steel models using Tekla Structures.
             </p>
             <p>
-              Every project begins with a conversation. No fixed language, no repeats &mdash; only spaces drawn
-              for the people and place that will inhabit them. The result is a body of work defined by
-              intention, restraint, and a reverence for permanence.
+              I’m passionate about architectural design, Building Information Modeling (BIM),
+              3D visualization, and architectural graphics. I enjoy exploring digital tools
+              and emerging technologies to improve design workflows and visual presentations,
+              while continuously developing my technical skills in BIM and architectural technology.
             </p>
           </motion.div>
 

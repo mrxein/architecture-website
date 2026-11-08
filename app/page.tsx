@@ -16,23 +16,22 @@ import ScrollRope from '@/components/scroll-rope'
 export default function Page() {
   return (
     <main className="relative bg-background">
-        <ScrollRope >
+      <ScrollRope >
 
-          <SiteNav />
-          <Hero />
-          <CinematicSlider />
-          <AboutSection />
-          <StylesSection />
-          <MasonryGallery />
-          <PhilosophySection />
-          <ProcessSection />
-          {/* <StudioSection /> */}
-          <QuotesSection />
-          <InstagramSection />
-          <BookingSection />
-          <SiteFooter />
+        <SiteNav />
+        <Hero />
+        <CinematicSlider />
+        <AboutSection />
+        <StylesSection />
+        <MasonryGallery />
+        <PhilosophySection />
+        <ProcessSection />
+        <QuotesSection />
+        <InstagramSection />
+        <BookingSection />
+        <SiteFooter />
 
-        </ScrollRope>
+      </ScrollRope>
 
     </main>
   )
