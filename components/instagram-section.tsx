@@ -1,9 +1,9 @@
-'use client'
+"use client";
 
-import Image from 'next/image'
-import { motion } from 'motion/react'
-import { INSTAGRAM_URL, INSTAGRAM_GRID } from '@/lib/site-data'
-import { InstagramGlyph } from '@/components/icons'
+import Image from "next/image";
+import { motion } from "motion/react";
+import { INSTAGRAM_URL, INSTAGRAM_GRID } from "@/lib/site-data";
+import { InstagramGlyph } from "@/components/icons";
 
 export function InstagramSection() {
   return (
@@ -26,31 +26,34 @@ export function InstagramSection() {
           >
             <InstagramGlyph className="size-4" />
             View profile
-            <span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
+            <span className="transition-transform duration-300 group-hover:translate-x-1">
+              &rarr;
+            </span>
           </a>
         </div>
 
         <div className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4 lg:grid-cols-6">
-          {INSTAGRAM_GRID.map((src, i) => (
+          {INSTAGRAM_GRID.map((post, i) => (
             <motion.a
-              key={src}
-              href={INSTAGRAM_URL}
+              key={post.href}
+              href={post.href}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={`${post.alt} – view on Instagram`}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-40px' }}
+              viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.5, delay: i * 0.06 }}
               className="film-grain group relative aspect-square overflow-hidden"
             >
               <Image
-                src={src || '/placeholder.svg'}
-                alt="Architecture studies from the Instagram feed"
+                src={post.src}
+                alt={post.alt}
                 fill
                 className="object-cover grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
                 sizes="(max-width: 768px) 50vw, 16vw"
               />
-              <div className="absolute inset-0 z-[2] flex items-center justify-center bg-background/60 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <div className="absolute inset-0 z-2 flex items-center justify-center bg-background/60 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <InstagramGlyph className="size-5 text-foreground" />
               </div>
             </motion.a>
@@ -58,5 +61,5 @@ export function InstagramSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -27,7 +27,7 @@ export default function Page() {
         <PhilosophySection />
         <ProcessSection />
         <QuotesSection />
-        <InstagramSection />
+        {/* <InstagramSection /> */}
         <BookingSection />
         <SiteFooter />
 

@@ -110,12 +110,16 @@ export const PROCESS_STEPS = [
 export const QUOTES = [] as const
 
 export const INSTAGRAM_GRID = [
-  '/insta-1.png',
-  '/insta-2.png',
-  '/insta-3.png',
-  '/insta-4.png',
-  '/gallery-blackwork-1.png',
-  '/gallery-geometric-1.png',
+  {
+    src: '/instagram/post-1.jpg',
+    href: 'https://www.instagram.com/reel/De_lvTAIahR/?utm_source=ig_web_copy_link&mdxt=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==',
+    alt: 'Concrete facade study at golden hour',
+  },
+  {
+    src: '/instagram/post-2.jpg',
+    href: 'https://www.instagram.com/p/YYYYYYYYYYY/',
+    alt: 'Staircase detail in black and white',
+  },
 ]
 
 export const PROJECT_TYPE_OPTIONS = [
